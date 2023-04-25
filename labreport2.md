@@ -58,7 +58,40 @@ public class ArrayExamples {
   }
 ```
 The purpose of this method is to reverse the elements of an array. The following JUNIT test will show that this 
-current method does not work
+current method does not work.
 ```
-
+public void testReverseInPlace() {
+    int[] input2 = {1,2,3};
+    ArrayExamples.reverseInPlace(input2); // {3,2,3}
+    assertArrayEquals(new int[]{3,2,1}, input2);
 ```
+The following is code that does not induce a failure. 
+```
+public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+```
+Below is a screenshot of the sypmtoms of the failure inducing code.
+![Symptoms](Symptoms.png)
+Before the bug was fixed: 
+```
+public class ArrayExamples {
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+After: 
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+```
+### Part 3
+Before this lab, I did not know it was possible to launch your own servers from a java program, let alone manipulate them from the url in real-time. I learned valauble debugging skills in code, as well as testing my code to check if my logic was correct. Although, what stood out to me in this particular lab was the complexity of the Server.java file- I am wondering what the file actually means such that it creates a website for the user.
