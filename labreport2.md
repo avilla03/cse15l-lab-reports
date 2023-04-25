@@ -48,3 +48,17 @@ it out to the website. The relevant arguments is everything that comes after and
 The first variable to be considered is input in this case. But, there is a difference, now that the method has 
 been 3 times, input stores the past 2 calls and displays all three products as one in the website. 
 ### Part 2
+Below is the buggy code we will be referencing throughout the section:
+```
+public class ArrayExamples {
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+The purpose of this method is to reverse the elements of an array. The following JUNIT test will show that this 
+current method does not work
+```
+
+```
