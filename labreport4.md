@@ -1,7 +1,6 @@
 # Lab Report 4
 ### Step 1 - Log into ieng
-Key strokes: `ssh cs15lsp23jd@ieng6-201.ucsd.edu<return>
-<password><return>`
+Key strokes: `ssh cs15lsp23jd@ieng6-201.ucsd.edu<return><password><return>`
 Summary: ssh command is used to login to the remote server
  ![login](ieng6.png)
 ### Step 2 - Clone your fork of the repository from your Github account
