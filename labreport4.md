@@ -14,7 +14,7 @@ Summary: ls to see sbu directories, cd then l tab to get listexamples.java, then
 ### Step 4 - Edit the code file to fix the failing test
 Key strokes: `vim Li<tab>.java<enter>43jer2<esc>:wq`
 Summary: vim ListExamples.java to enter vim, then followed by vim commands to edit.
-![testEdit](testedit.png)
+![testEdit](newtestedit.png)
 ### Step 5 - Run the tests, demonstrating that they now succeed
 Key strokes - `bash test.sh<enter>`
 Summary: run test.sh file
