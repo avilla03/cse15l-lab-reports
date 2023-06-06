@@ -15,7 +15,7 @@ end of the command such that CustomTester.java became CustomTester.
 Files: grade.sh, CustomTester.java, Student.java, Course.java, Sanctuary.java
 Directory: /Users/andrewvillapudua/CSE12Stuff/PA5/cse12-sp23-pa5-HashTable-starter-main/starter
 2) When attempting to run CustomTester, the contents is as follows: 
-`
+```
 public class CustomTester {
     Student stud, stud1;
     Course course, course1, course2;
@@ -134,7 +134,7 @@ public class CustomTester {
 
     }
 }
-`
+```
 3) Command ran: bash grade.sh CustomTester.java
 Contents of grade.sh:
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
