@@ -142,3 +142,5 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 `
 4) All that was needed to fix the bug was to truncate the end of the file to CustomTester.
 ## Part 2
+Something interesting I learned was how to use and edit in VIM. I have known about VIM for a short time, when it was first
+introduced to me by my housemate this year, and instantly I was intimidated by the non-conventional key strokes needed to navigate throught it. Now, I feel much more comfortable with it and am excited to use my skills in future classes.
